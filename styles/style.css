@@ -1,0 +1,99 @@
+body{
+    background-color: #242323;
+    color: white;
+}
+
+/*#bold{
+    font-style: oblique;
+}*/
+
+.titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(47, 186, 98);
+
+}
+
+
+.body{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+
+};
+
+.body-right{
+    align-items: center;
+    align-content: center;
+}
+
+
+.bloque{
+    width: 400px;
+    height: 50px;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    border :solid  rgb(47, 186, 98), 2px;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.habit-complete-animation {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+.points-update {
+    animation: pointsFlash 0.5s ease-in-out;
+}
+
+@keyframes pointsFlash {
+    0% { transform: scale(1); color: white; }
+    50% { transform: scale(1.3); color: yellow; }
+    100% { transform: scale(1); color: white; }
+}
+
+.btn_hm_1{
+    padding: 2px;
+    border-style: none;
+    border: solid black 2px;
+    border-radius: 6px;
+    background-color:rgb(47, 186, 98);
+}
+.btn_hm_2{
+    padding: 2px;
+    border-style: none;
+    border-radius: 6px;
+    background-color: red;
+}
+.modal-content{
+    background-color: #242323;
+}
+
+
+.btn-outline-light{
+    transition: 500ms;
+}
+
+.btn-outline-light:hover{
+    background-color: seagreen;
+    border: none;
+    transition: 500ms;
+}
+
+
+.bg-sas{
+    /*background-color: #a67a2e;*/
+    color:rgb(47, 186, 98);
+}

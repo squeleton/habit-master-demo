@@ -1,0 +1,23 @@
+body{
+    background-color: #242323;
+    color: white;
+}
+
+.body-insipiration{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.bloque1{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.italic{
+    font-style: italic;
+    color: gray;
+}
