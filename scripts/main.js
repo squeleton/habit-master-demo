@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 let habits = JSON.parse(localStorage.getItem("habits")) || [];
-let userPoints = parseInt(localStorage.getItem("userPoints")) || 4990;
+let userPoints = parseInt(localStorage.getItem("userPoints")) || 0;
 let completedHabits = JSON.parse(localStorage.getItem("completedHabits")) || {};
 let currentFilter = "good";
 
