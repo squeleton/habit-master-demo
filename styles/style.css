@@ -97,3 +97,24 @@ body{
     /*background-color: #a67a2e;*/
     color:rgb(47, 186, 98);
 }
+
+@media (max-width: 768px) { /* Para pantallas pequeñas */
+    .container { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    #habitSection {
+        order: 1; /* Los hábitos primero */
+    }
+
+    #rankSection {
+        order: 2; /* Emblema e imagen abajo */
+        margin-top: 20px; /* Espacio entre hábitos y emblema */
+        text-align: center;
+    }
+
+    #rankImage {
+        max-width: 60%; /* Ajustar tamaño del emblema */
+    }
+}
