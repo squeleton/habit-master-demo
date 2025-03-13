@@ -1,186 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="es">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="media/planet_icon_app.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habit Master</title>
-
-    <style>
-        body {
-            background-color: black;
-            text-align: center;
-            margin-top: 100px;
-            color: #2a9d90;
-            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-            font-style: oblique;
-        }
-
-        .simple_change_margin {
-            margin-top: 0px;
-            padding-top: 0px;
-        }
-
-        .hover {
-            transition: 120ms;
-            opacity: 1;
-        }
-
-        .hover:hover {
-            opacity: 0.5;
-            transition: 120ms;
-        }
-
-        .planet-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        .arrow {
-            font-size: 30px;
-            color: #2a9d90;
-            cursor: pointer;
-            margin: 0 20px;
-        }
-
-        
-
-       
-    </style>
+    <link rel="stylesheet" href="styles/style_index.css">
 </head>
 <body>
 
-
+    <!-- Contenedor del planeta (parte 1) -->
     <div class="planet-container">
-        <!-- Flecha para cambiar hacia la izquierda -->
-        <span class="arrow" id="prevArrow">&#8592;</span>
-
-        <a id="planetLink" href="homepage.html" target="_blank">
-            <img class="hover" id="planetImage" src="media/venus.gif" alt="planet">
+        <a class="planet-link" href="homepage.html" target="_blank">
+            <img id="planetImage" src="media/venus.gif" alt="planet">
         </a>
-        <!-- Flecha para cambiar hacia la derecha -->
-        <span class="arrow" id="nextArrow">&#8594;</span>
+        <h1>Welcome to Habit Master</h1>
+        <p class="oblique" id="currentDate"></p>
     </div>
 
-    <h1>Welcome to Habit Master</h1>
-    <p class="simple_change_margin"><span id="currentDate"></span></p>
+    <!-- Sección adicional 1 (video a la izquierda) -->
+    <div class="content-container">
+        <!-- Video -->
+        <iframe src="https://www.youtube.com/embed/YR_wIb_n4ZU?autoplay=1&controls=0&mute=1&loop=1&playlist=YR_wIb_n4ZU" title="Video de presentación"></iframe>
 
-    <iframe style="margin-top: 700px;" 
-            src="https://www.youtube.com/embed/YR_wIb_n4ZU?autoplay=1&controls=0&mute=1&loop=1&playlist=YR_wIb_n4ZU" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-    </iframe>
-    <p>Created By Nad 2025</p>
+        <!-- Texto descriptivo -->
+        <div class="content-text">
+            <h2>¿Qué es Habit Master?</h2>
+            <p>
+                Habit Master es tu compañero perfecto para establecer y mantener hábitos. Ya sea que busques mejorar tu salud, ser más productivo o desarrollar cualquier habilidad nueva, esta aplicación está diseñada para ayudarte a lograr tus metas de forma efectiva y divertida.
+            </p>
+            <p>
+                Con Habit Master, puedes agregar tus propios hábitos, seguir tu progreso y mantenerte motivado con recordatorios diarios.
+            </p>
+            <a href="homepage.html" class="btn">Añade tu primer hábito</a>
+        </div>
+    </div>
+
+    <!-- Sección adicional 2 (video a la derecha) -->
+    <div class="additional-section reverse">
+        <!-- Video -->
+        <iframe src="https://www.youtube.com/embed/YR_wIb_n4ZU?autoplay=1&controls=0&mute=1&loop=1&playlist=YR_wIb_n4ZU" title="Video de presentación"></iframe>
+
+        <!-- Texto descriptivo -->
+        <div class="content-text">
+            <h2>Características de Habit Master</h2>
+            <p>
+                Con nuestra app, podrás gestionar tu tiempo, hacer seguimientos detallados y recibir notificaciones de progreso.
+            </p>
+            <p>
+                Esta es una manera fácil y entretenida de asegurarte de alcanzar todos tus objetivos con una interfaz intuitiva y atractiva.
+            </p>
+            <a href="homepage.html" class="btn">Empezar ahora</a>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <!-- Video -->
+        <iframe src="https://www.youtube.com/embed/YR_wIb_n4ZU?autoplay=1&controls=0&mute=1&loop=1&playlist=YR_wIb_n4ZU" title="Video de presentación"></iframe>
+
+        <!-- Texto descriptivo -->
+        <div class="content-text">
+            <h2>Premiun</h2>
+            <p>
+                Habit Master fue creado con la idea de ayudar al creador a lograr sus metas, luego de ello se dio cuenta que la web podia servierle a otras personas y por eso la funciones core de habit master, aquellas que te pretenden ayudarte a mejorar son gratis.
+            </p>
+            <p>
+               Sin embargo, premiun es mas alla. Quieres unirte a la comunidad y hablar sobre habitos, ver rutines interesantes, comparar tus puntos al ranking global o quizas quieres aprender sobre habitos con nuestra herramienta de aprendisaje o quizas quieres ruinas recomendadas de ejercio o de productividad.
+            </p>
+
+            <p>
+                Habit Master Premiun es un pago de una vez solamente, nada de pagos mensuales por que detestamos este tipo de maniobras para hacer dinero. Habit Master premiun existe para la gente que va enserio a por sus metas, que quiere ser su mejor version por un precio economico y un sistema razonable. 
+             </p>
+            <a href="homepage.html" class="btn">Añade tu primer hábito</a>
+        </div>
+    </div>
+
+    <div class="additional-section reverse">
+        <!-- Video -->
+        <iframe src="https://www.youtube.com/embed/YR_wIb_n4ZU?autoplay=1&controls=0&mute=1&loop=1&playlist=YR_wIb_n4ZU" title="Video de presentación"></iframe>
+
+        <!-- Texto descriptivo -->
+        <div class="content-text">
+            <h2>Comunidad</h2>
+            <p>
+                Con nuestra app, podrás gestionar tu tiempo, hacer seguimientos detallados y recibir notificaciones de progreso.
+            </p>
+            <p>
+                Esta es una manera fácil y entretenida de asegurarte de alcanzar todos tus objetivos con una interfaz intuitiva y atractiva.
+            </p>
+            <a href="homepage.html" class="btn">Empezar ahora</a>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <!-- Video -->
+        <iframe src="https://www.youtube.com/embed/YR_wIb_n4ZU?autoplay=1&controls=0&mute=1&loop=1&playlist=YR_wIb_n4ZU" title="Video de presentación"></iframe>
+
+        <!-- Texto descriptivo -->
+        <div class="content-text">
+            <h2>Premios</h2>
+            <p>
+                Habit Master fue creado con la idea de ayudar al creador a lograr sus metas, luego de ello se dio cuenta que la web podia servierle a otras personas y por eso la funciones core de habit master, aquellas que te pretenden ayudarte a mejorar son gratis.
+            </p>
+            <p>
+               Sin embargo, premiun es mas alla. Quieres unirte a la comunidad y hablar sobre habitos, ver rutines interesantes, comparar tus puntos al ranking global o quizas quieres aprender sobre habitos con nuestra herramienta de aprendisaje o quizas quieres ruinas recomendadas de ejercio o de productividad.
+            </p>
+
+            <p>
+                Habit Master Premiun es un pago de una vez solamente, nada de pagos mensuales por que detestamos este tipo de maniobras para hacer dinero. Habit Master premiun existe para la gente que va enserio a por sus metas, que quiere ser su mejor version por un precio economico y un sistema razonable. 
+             </p>
+            <a href="homepage.html" class="btn">Añade tu primer hábito</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="margin-top: 50px;">
+        <p>Made By <a class="weas" href="https://www.youtube.com/@Nad_0101">Nad</a></p>
+    </footer>
 
     <script>
-        // Array con los planetas, sus imágenes y las URLs correspondientes
-        const planets = [
-            { gif: 'venus.gif', href: "homepage.html" },
-            { gif: 'jupiter.gif', href: "inspirations.html" },
-        ];
-
-        let currentPlanetIndex = 0;
-
-        // Función para actualizar la imagen del planeta y el enlace
-        function updatePlanetImage() {
-            const planetImage = document.getElementById("planetImage");
-            const planetLink = document.getElementById("planetLink");
-
-            // Actualiza la imagen del planeta
-            planetImage.src = "media/" + planets[currentPlanetIndex].gif;
-
-            // Actualiza el enlace
-            planetLink.href = planets[currentPlanetIndex].href;
-        }
-
-        // Evento para cambiar al planeta anterior
-        document.getElementById("prevArrow").addEventListener("click", function() {
-            currentPlanetIndex = (currentPlanetIndex === 0) ? planets.length - 1 : currentPlanetIndex - 1;
-            updatePlanetImage();
-        });
-
-        // Evento para cambiar al siguiente planeta
-        document.getElementById("nextArrow").addEventListener("click", function() {
-            currentPlanetIndex = (currentPlanetIndex === planets.length - 1) ? 0 : currentPlanetIndex + 1;
-            updatePlanetImage();
-        });
-
         // Mostrar la fecha actual
         const today = new Date();
         const formattedDate = today.toLocaleDateString();
         document.getElementById("currentDate").textContent = formattedDate;
     </script>
+
 </body>
 </html>
-
-
-<!----
-codigo original: <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="icon" type="image/x-icon" href="media/logo_demo.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habit Master</title>
-
-    <style>
-        body{
-            
-            background-color: black;
-            text-align: center;
-            margin-top: 100px;
-            color: #2a9d90;
-            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-            font-style: oblique;
-        }
-        .simple_change_margin{
-            margin-top:0px;
-            padding-top: 0px;
-        }
-        .hover{
-            transition: 120ms;
-            opacity: 1;
-        }
-
-        .hover:hover{
-            opacity: 0.5; 
-            transition: 120ms;
-                }
-    </style>
-</head>
-<body>
-    <a href="homepage.html"><img class="hover" src="media/venus.gif" alt="fondo"></a>
-    <h1>Welcome to Habit Master</h1>
-    <p class="simple_change_margin"><span id="currentDate"></span></p> 
-    
-    
-    <iframe style="margin-top: 700px;"
-    src="https://www.youtube.com/embed/YR_wIb_n4ZU?autoplay=1&controls=0&mute=1&loop=1&playlist=YR_wIb_n4ZU" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen>
-</iframe>
-<p>Created By Nad 2025</p>
-    
-    
-    
-    <script> 
-        // Get the current date 
-        const today = new Date(); 
-        // Format the date as needed (e.g., MM/DD/YYYY) 
-        const formattedDate = today.toLocaleDateString(); 
-        // Display the date in the HTML 
-        document.getElementById("currentDate").textContent = formattedDate; 
-    </script>
-</body>
-</html>
-
-
--->
