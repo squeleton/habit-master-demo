@@ -1,23 +1,237 @@
-body{
-    background-color: #242323;
-    color: white;
+ /* Fondo para la sección inicial con el planeta */
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.body-insipiration{
+/* Contenedor de la primera sección (planeta) */
+.planet-container {
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh; /* La altura ocupa toda la pantalla */
+    position: relative;
+    text-align: center;
 }
 
+.planet-link img {
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%; /* Imagen responsiva */
+    height: auto;
+}
 
-.bloque1{
-    text-align: center;
-    align-items: center;
-    align-content: center;
+.planet-link img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para la bienvenida con animación futurista */
+h1 {
+    color: #2a9d90;
+    font-size: 2.5em;
+    margin-top: 20px;
+    opacity: 0;  /* Comienza invisible */
+    transform: translateY(30px);  /* Comienza con desplazamiento */
+    animation: fadeInUp 1.5s forwards;  /* Aplicamos la animación */
+    font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+}
+
+/* Animación para hacer que el texto aparezca de abajo hacia arriba */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    font-size: 1.2em;
+    color: #333;
     margin-top: 20px;
 }
 
-.italic{
-    font-style: italic;
-    color: gray;
+/* Estilo para la sección de contenido adicional al hacer scroll */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;  /* Fondo blanco en las secciones adicionales */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 15px;      
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+/* Video */
+.content-container iframe {
+    width: 45%;
+    height: 300px;
+    border: none;
+    margin-bottom: 20px;  /* Espaciado para pantallas pequeñas */
+}
+
+.content-text {
+    width: 45%;
+    text-align: left;
+    color: #333;
+}
+.oblique {
+    font-style: oblique;
+    margin-top: 0px;
+    color:#2a9d90;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2a9d90;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #219a7d;
+}
+
+footer {
+    background-color: #2a9d90;
+    color: #fff;
+    padding: 2px 0;
+    text-align: center;
+}
+
+/* Estilo de las nuevas secciones */
+.additional-section {
+    margin-right: 15px;
+    margin-left: 15px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.additional-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.additional-section iframe {
+    width: 45%;
+    height: 300px;
+    border: none;
+}
+
+.additional-section .content-text {
+    width: 45%;
+    text-align: left;
+    color: #333;
+}
+
+h2 {
+    color: #2a9d90;
+    font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+}
+
+/* Media Queries para pantallas más pequeñas (tabletas y móviles) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .content-container iframe {
+        width: 80%;
+        height: 200px;
+    }
+
+    .content-text {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .additional-section {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .additional-section iframe {
+        width: 80%;
+        height: 200px;
+    }
+
+    .additional-section .content-text {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .content-container iframe {
+        width: 100%;
+        height: 180px;
+    }
+
+    .content-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 1em;
+    }
+
+    .additional-section iframe {
+        width: 100%;
+        height: 180px;
+    }
+
+    .additional-section .content-text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.weas{
+    text-decoration: none;
+    color: #333;
+    transition: 250ms;
+}
+
+.weas:hover{
+    color: #f5f5f5;
+    transition: 250ms;
+
 }
