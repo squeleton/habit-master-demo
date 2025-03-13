@@ -118,3 +118,35 @@ body{
         max-width: 60%; /* Ajustar tamaño del emblema */
     }
 }
+
+@media (max-width: 768px) { 
+    #headerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Espaciado entre título y botones */
+        text-align: center;
+    }
+
+    #headerTitle {
+        font-size: 1.5rem; /* Tamaño del título */
+    }
+
+    #headerButtons {
+        margin-top: 5px;
+        display: flex;
+        flex-wrap: wrap; /* Permite que los botones se acomoden si no caben */
+        justify-content: center;
+        gap: 10px; /* Espaciado entre botones */
+    }
+
+    .header-button {
+        flex: 1; /* Distribuir espacio de manera uniforme */
+        min-width: 120px; /* Evita que sean demasiado pequeños */
+    }
+}
+
+h2 {
+    font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+}
+
